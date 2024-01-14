@@ -19,6 +19,23 @@
 .pokeImg {
   width: 35%;
 }
+.pokePanier,
+.pokeIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.303);
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 25px;
+}
+.pokePanier a,.pokeIndex a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
 .pokeImg img {
   width: 100%;
   height: 100%;
@@ -43,36 +60,36 @@
   font-size: 1.2rem;
   padding: 1rem;
 }
-.pokeInfoSprite{
-    padding-top:15px ;
-    display: flex;
+.pokeInfoSprite {
+  padding-top: 15px;
+  display: flex;
 }
-.pokeInfoStatsTitle{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
+.pokeInfoStatsTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.pokeInfoStats{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.303);
-    border-bottom: 2px solid rgb(255, 0, 0);
+.pokeInfoStats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.303);
+  border-bottom: 2px solid rgb(255, 0, 0);
 }
-.footer{
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #616161;
-    margin-top: 1rem;
+.footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #616161;
+  margin-top: 1rem;
 }
-.title-container{
-
-    background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
+.title-container {
+  background: transparent
+    url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
 }
 .title {
   font-size: 1.5rem;
@@ -107,14 +124,14 @@
   border-radius: 10px;
   padding: 5px;
 }
-.infoStats{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
+.infoStats {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
-.description{
-    margin: 1rem;
-    font-size: 1.2rem;
+.description {
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 .pokeInfoButton {
   border: black 2px solid;
@@ -135,34 +152,34 @@
 }
 
 @keyframes tada {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-  
-    10%,
-    20% {
-      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    }
-  
-    30%,
-    50%,
-    70%,
-    90% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    }
-  
-    40%,
-    60%,
-    80% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    }
-  
-    to {
-      transform: scale3d(1, 1, 1);
-    }
+  from {
+    transform: scale3d(1, 1, 1);
   }
-  
-  .tada {
-    animation-name: tada;
-      animation-duration: 1s;
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation-name: tada;
+  animation-duration: 1s;
+}

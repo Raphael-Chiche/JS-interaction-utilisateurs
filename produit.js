@@ -82,6 +82,8 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${idPokemon}`)
                 <p class="pokeInfoType">Type : ${types}</p>
               </div>
               <button class="pokeInfoButton">Ajouter au panier</button>
+              <button class="pokePanier"><a href="panier.html">Voir le panier</a></button>
+              <button class="pokeIndex"><a href="index.html">Retour à l'accueil</a></button>
             </div>
           </div>
           <div class="pokeInfoSprite">
