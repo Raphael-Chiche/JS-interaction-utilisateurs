@@ -213,4 +213,8 @@
   .sprite{
     width: 250px;
   }
+
+  .pokeImg img{
+    padding: 10px;
+  }
 } 
