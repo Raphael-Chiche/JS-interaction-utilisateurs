@@ -30,7 +30,8 @@
   margin: 5px;
   border-radius: 25px;
 }
-.pokePanier a,.pokeIndex a {
+.pokePanier a,
+.pokeIndex a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -183,3 +184,33 @@
   animation-name: tada;
   animation-duration: 1s;
 }
+
+@media (max-width: 700px) {
+  .pokeInfoImg {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .pokeImg {
+    width: 50%;
+  }
+
+  .pokeInfoSprite {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+@media (max-width: 540px) {
+
+  .pokeInfoMain{
+    grid-template-columns: 1fr;
+  }
+
+  .sprite{
+    width: 250px;
+  }
+} 
