@@ -110,26 +110,26 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${idPokemon}`)
   });
 
 
+window.addEventListener("load", () => {
   fetch(`https://pokeapi.co/api/v2/pokemon-species/${idPokemon}`)
   .then((response) => response.json())
   .catch((error) => {
     console.log(error);
   })
   .then((data) => {
-    let description = '';
+    let description = "";
     for (let i = 0; i < data.flavor_text_entries.length; i++) {
-      if (data.flavor_text_entries[i].language.name === 'fr') {
+      if (data.flavor_text_entries[i].language.name === "fr") {
         description = data.flavor_text_entries[i].flavor_text;
         break;
       }
     }
-    const descriptionElement = document.createElement('p');
-    descriptionElement.classList.add('pokeInfoDescription');
+    const descriptionElement = document.createElement("p");
+    descriptionElement.classList.add("pokeInfoDescription");
     descriptionElement.innerHTML = `Description : <br> ${description}`;
     document.querySelector(".description").appendChild(descriptionElement);
   });
 
-window.addEventListener("load", () => {
   let pokemonArray = JSON.parse(localStorage.getItem("pokemon")) || [];
 
   document.querySelector(".pokeInfoButton").addEventListener("click", () => {
@@ -142,4 +142,15 @@ window.addEventListener("load", () => {
     pokemonArray.push(pokemonData);
     localStorage.setItem("pokemon", JSON.stringify(pokemonArray));
   });
+
+  const buttonPanier = document.querySelector(".pokeInfoButton");
+
+  buttonPanier.addEventListener("click", () => {
+    buttonPanier.classList.add("tada");
+    buttonPanier.addEventListener("animationend", () => {
+      buttonPanier.classList.remove("tada");
+    });
+  });
+
+  
 });
